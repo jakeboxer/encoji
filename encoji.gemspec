@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Encoji::VERSION
   spec.authors       = ["Jake Boxer"]
   spec.email         = ["jake@github.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Convert real Unicode emoji to and from the colon-separated emoji-cheat-sheet form.}
+  spec.summary       = %q{Convert emoji to emoji-cheat-sheet form and vice-versa.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
