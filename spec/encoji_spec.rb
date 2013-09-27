@@ -29,5 +29,9 @@ describe Encoji do
     it 'converts a cheat-sheet thumbsup to emoji form' do
       expect(Encoji.to_emoji(':thumbsup:')).to eql(emoji(:thumbsup))
     end
+
+    it 'converts to a multi-codepoint emoji' do
+      expect(Encoji.to_emoji(':one:')).to eql(emoji(:one))
+    end
   end
 end
