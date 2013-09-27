@@ -1,6 +1,6 @@
 # Encoji
 
-TODO: Write a gem description
+Convert real Unicode emoji to and from the colon-separated emoji-cheat-sheet form.
 
 ## Installation
 
@@ -18,7 +18,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+``` ruby
+Encoji.to_cheat_sheet("Looks good \u{1f44d}")
+# => "Looks good :+1:"
+
+Encoji.to_emoji("Looks good :+1:")
+# => "Looks good \u{1f44d}"
+```
 
 ## Contributing
 
