@@ -3,7 +3,8 @@ require 'encoji'
 module Helpers
   def emoji(name)
     @emoji ||= {
-      :smile => "\u{1f604}"
+      :smile    => "\u{1f604}",
+      :thumbsup => "\u{1f44d}"
     }
 
     @emoji[name]
