@@ -20,6 +20,14 @@ module Encoji
   end
 
   def to_emoji(text)
-    "\u{1f604}"
+    result = String.new(text)
+
+    ATTRIBUTES.each do |codepoints, cheat_sheet_codes, description|
+      cheat_sheet_codes.each do |cheat_sheet_code|
+        result.gsub!(":#{cheat_sheet_code.to_s}:", codepoints)
+      end
+    end
+
+    result
   end
 end

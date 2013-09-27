@@ -12,8 +12,12 @@ describe Encoji do
   end
 
   describe 'to_emoji' do
-    it 'converts a cheat-sheet-only string to emoji form' do
+    it 'converts a cheat-sheet smile to emoji form' do
       expect(Encoji.to_emoji(':smile:')).to eql(emoji(:smile))
+    end
+
+    it 'converts a cheat-sheet thumbsup to emoji form' do
+      expect(Encoji.to_emoji(':thumbsup:')).to eql(emoji(:thumbsup))
     end
   end
 end
